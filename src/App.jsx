@@ -89,7 +89,7 @@ const App = () => {
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}>
-                        Pagination
+                        Pagination1
                         <Pagination />
                         <Buttons />
                     </Content>
