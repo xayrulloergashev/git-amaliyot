@@ -23,7 +23,7 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
                 const subKey = index * 4 + j + 1;
                 return {
                     key: subKey,
-                    label: `option${subKey}`,
+                    label: `menu${subKey}`,
                 };
             }),
         };
