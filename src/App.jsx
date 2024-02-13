@@ -8,9 +8,9 @@ import Buttons from './components/button/index';
 import {Layout, Menu, theme, Button, Tooltip} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 const {Header, Content, Sider} = Layout;
-const items1 = ['1', '2', '3', '4', '5', '6'].map(item => ({
+const items1 = ['5', '8', '4', '22', '6', '8'].map(item => ({
     item,
-    label: `TEST ${item}`,
+    label: `LOREM ${item}`,
 }));
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
     (icon, index) => {
