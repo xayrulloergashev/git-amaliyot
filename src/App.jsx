@@ -7,9 +7,9 @@ import {
 import { Layout, Menu, theme, Button, Tooltip } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 const { Header, Content, Sider } = Layout;
-const items1 = ["1", "2", "3"].map((key) => ({
-  key,
-  label: `nav ${key}`,
+const items1 = ["1", "2", "3", "4", "5", "6"].map((item) => ({
+  item,
+  label: `TEST ${item}`,
 }));
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
   (icon, index) => {
