@@ -5,6 +5,7 @@ import {
     UserOutlined,
 } from '@ant-design/icons';
 import Buttons from './components/button/index';
+import Pagination from './components/pagination/index';
 import {Layout, Menu, theme, Button, Tooltip} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 const {Header, Content, Sider} = Layout;
@@ -88,7 +89,8 @@ const App = () => {
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}>
-                        Hello world
+                        Pagination
+                        <Pagination />
                         <Buttons />
                     </Content>
                 </Layout>
