@@ -56,7 +56,7 @@ const App = () => {
                     }}
                 />
                 <Button type='primary' size='large' icon={<SearchOutlined />}>
-                    Search
+                    Bexruz
                 </Button>
             </Header>
             <Layout style={{ height: 'calc(100vh - 65px)' }}>
