@@ -4,6 +4,7 @@ import {
     NotificationOutlined,
     UserOutlined,
 } from '@ant-design/icons';
+import Buttons from './components/button/index';
 import {Layout, Menu, theme, Button, Tooltip} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 const {Header, Content, Sider} = Layout;
@@ -88,6 +89,7 @@ const App = () => {
                             borderRadius: borderRadiusLG,
                         }}>
                         Hello world
+                        <Buttons />
                     </Content>
                 </Layout>
             </Layout>
