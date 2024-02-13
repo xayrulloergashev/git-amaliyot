@@ -4,7 +4,8 @@ import {
     NotificationOutlined,
     UserOutlined,
 } from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Layout, Menu, theme, Button, Tooltip } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
 const { Header, Content, Sider } = Layout;
 const items1 = ['1', '2', '3'].map((key) => ({
     key,
@@ -54,6 +55,9 @@ const App = () => {
                         minWidth: 0,
                     }}
                 />
+                <Button type='primary' icon={<SearchOutlined />}>
+                    Search
+                </Button>
             </Header>
             <Layout style={{ height: 'calc(100vh - 65px)' }}>
                 <Sider
@@ -78,15 +82,6 @@ const App = () => {
                         padding: '0 24px 24px',
                     }}
                 >
-                    <Breadcrumb
-                        style={{
-                            margin: '16px 0',
-                        }}
-                    >
-                        <Breadcrumb.Item>Home</Breadcrumb.Item>
-                        <Breadcrumb.Item>List</Breadcrumb.Item>
-                        <Breadcrumb.Item>App</Breadcrumb.Item>
-                    </Breadcrumb>
                     <Content
                         style={{
                             padding: 24,
