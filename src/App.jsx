@@ -55,7 +55,7 @@ const App = () => {
                         minWidth: 0,
                     }}
                 />
-                <Button type='primary' icon={<SearchOutlined />}>
+                <Button type='primary' size='large' icon={<SearchOutlined />}>
                     Search
                 </Button>
             </Header>
