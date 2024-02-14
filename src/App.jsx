@@ -8,6 +8,7 @@ import Buttons from './components/button/index';
 import Pagination from './components/pagination/index';
 import {Layout, Menu, theme, Button, Tooltip} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
+import Cards from './components/card/index';
 const {Header, Content, Sider} = Layout;
 const items1 = ['5', '8', '4', '22', '6', '8'].map(item => ({
     item,
@@ -89,6 +90,7 @@ const App = () => {
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}>
+                        <Cards />
                         Pagination1
                         <Pagination />
                         <Buttons />
