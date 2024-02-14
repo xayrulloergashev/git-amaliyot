@@ -15,9 +15,9 @@ import Inp from './components/Serch';
 import Forma from './components/Form';
 import Progr from './components/Progr/indx';
 const {Header, Content, Sider} = Layout;
-const items1 = ['5', '8', '4', '22', '6', '8'].map(item => ({
+const items1 = ['5', '8', '4', '22', '8', '8'].map(item => ({
     item,
-    label: `LOREM ${item}`,
+    label: `salom ${item}`,
 }));
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
     (icon, index) => {
@@ -30,7 +30,7 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
                 const subKey = index * 4 + j + 1;
                 return {
                     key: subKey,
-                    label: `menu${subKey}`,
+                    label: `test${subKey}`,
                 };
             }),
         };
@@ -47,11 +47,7 @@ const App = () => {
                     display: 'flex',
                     alignItems: 'center',
                 }}>
-                <img
-                    src='../public/logo.svg'
-                    width={100}
-                    style={{color: 'white'}}
-                />
+                <img src='../public/logo.svg' width={100} />
                 <Menu
                     theme='dark'
                     mode='horizontal'
@@ -63,7 +59,7 @@ const App = () => {
                     }}
                 />
                 <Button type='primary' size='large' icon={<SearchOutlined />}>
-                    Bexruz Qidiruvda 😁😎
+                    search
                 </Button>
             </Header>
             <Layout style={{height: 'calc(100vh - 65px)'}}>
@@ -94,7 +90,7 @@ const App = () => {
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}>
-                        Pagination1
+                        Navigation
                         <Pagination />
                         <br />
                         <Buttons />
@@ -104,7 +100,7 @@ const App = () => {
                         <Inp />
                         <Forma />
                         <br />
-                        <Watermark content='Bexruz'>
+                        <Watermark content='tEst'>
                             <div style={{height: 100}} />
                             <Progr />
                         </Watermark>
