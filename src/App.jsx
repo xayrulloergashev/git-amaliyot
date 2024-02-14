@@ -17,7 +17,7 @@ import Progr from './components/Progr/indx';
 const {Header, Content, Sider} = Layout;
 const items1 = ['5', '8', '4', '22', '8', '8'].map(item => ({
     item,
-    label: `salom ${item}`,
+    label: `Hello ${item}`,
 }));
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
     (icon, index) => {
@@ -49,7 +49,7 @@ const App = () => {
                 }}>
                 <img src='../public/logo.svg' width={100} />
                 <Menu
-                    theme='dark'
+                    theme='light'
                     mode='horizontal'
                     defaultSelectedKeys={['2']}
                     items={items1}
@@ -90,7 +90,7 @@ const App = () => {
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}>
-                        Navigation
+                        Pagination1
                         <Pagination />
                         <br />
                         <Buttons />
