@@ -6,8 +6,14 @@ import {
 } from '@ant-design/icons';
 import Buttons from './components/button/index';
 import Pagination from './components/pagination/index';
-import {Layout, Menu, theme, Button, Tooltip} from 'antd';
+import {Layout, Menu, theme, Button, Tooltip, Watermark} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
+import Test1 from './components/Test';
+import Card1 from './components/Test1';
+import AnchorT from './components/Serch';
+import Inp from './components/Serch';
+import Forma from './components/Form';
+import Progr from './components/Progr/indx';
 const {Header, Content, Sider} = Layout;
 const items1 = ['5', '8', '4', '22', '6', '8'].map(item => ({
     item,
@@ -85,13 +91,23 @@ const App = () => {
                         style={{
                             padding: 24,
                             margin: 0,
-                            minHeight: 280,
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}>
                         Pagination1
                         <Pagination />
+                        <br />
                         <Buttons />
+                        <br />
+                        <Test1 />
+                        <Card1 />
+                        <Inp />
+                        <Forma />
+                        <br />
+                        <Watermark content='Bexruz'>
+                            <div style={{height: 100}} />
+                            <Progr />
+                        </Watermark>
                     </Content>
                 </Layout>
             </Layout>
