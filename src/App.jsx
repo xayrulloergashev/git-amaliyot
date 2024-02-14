@@ -17,7 +17,7 @@ import Progr from './components/Progr/indx';
 const {Header, Content, Sider} = Layout;
 const items1 = ['5', '8', '4', '22', '6', '8'].map(item => ({
     item,
-    label: `LOREM ${item}`,
+    label: `Hello ${item}`,
 }));
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
     (icon, index) => {
@@ -30,7 +30,7 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
                 const subKey = index * 4 + j + 1;
                 return {
                     key: subKey,
-                    label: `menu${subKey}`,
+                    label: `Page${subKey}`,
                 };
             }),
         };
@@ -53,7 +53,7 @@ const App = () => {
                     style={{color: 'white'}}
                 />
                 <Menu
-                    theme='dark'
+                    theme='light'
                     mode='horizontal'
                     defaultSelectedKeys={['2']}
                     items={items1}
@@ -63,7 +63,7 @@ const App = () => {
                     }}
                 />
                 <Button type='primary' size='large' icon={<SearchOutlined />}>
-                    Bexruz Qidiruvda 😁😎
+                    Bexruz Qidiruvda
                 </Button>
             </Header>
             <Layout style={{height: 'calc(100vh - 65px)'}}>
@@ -94,7 +94,7 @@ const App = () => {
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}>
-                        Pagination1
+                        Container
                         <Pagination />
                         <br />
                         <Buttons />
